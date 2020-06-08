@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" type="Pane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="809.0" fitWidth="808.0" layoutX="-4.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgtaalscherm.png" />
+         </image>
+      </ImageView>
+      <GridPane alignment="CENTER" hgap="10.0" layoutX="-4.0" layoutY="-4.0" prefHeight="808.0" prefWidth="808.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1464.0" minWidth="583.0" prefWidth="626.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="300.0" minHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="321.0" minHeight="0.0" prefHeight="57.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="339.0" minHeight="0.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="342.0" minHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="339.0" minHeight="0.0" prefHeight="62.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="339.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="339.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="339.0" minHeight="0.0" prefHeight="69.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="339.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblGebruikersnaam" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="810.0" textAlignment="CENTER" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txfGebruikersnaam" prefHeight="69.0" prefWidth="788.0" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label fx:id="lblWachtwoord" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="861.0" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="lblBevestigWachtwoord" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="842.0" textAlignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="lblVoornaam" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="826.0" textAlignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txfVoornaam" prefHeight="92.0" prefWidth="808.0" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label fx:id="lblAchternaam" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="865.0" GridPane.rowIndex="8">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txfAchternaam" prefHeight="66.0" prefWidth="808.0" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="btnAnnuleer" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#annuleer" prefHeight="75.0" prefWidth="425.0" textAlignment="CENTER" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets left="400.0" right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRegistreer" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#registreer" prefHeight="75.0" prefWidth="381.0" textAlignment="CENTER" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets left="10.0" right="370.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="pwfWachtwoord" prefHeight="78.0" prefWidth="820.0" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </PasswordField>
+            <PasswordField fx:id="pwfWachwoordbevestiging" prefHeight="98.0" prefWidth="788.0" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </PasswordField>
+         </children>
+      </GridPane>
+   </children>
+</fx:root>
